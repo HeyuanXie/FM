@@ -1,0 +1,30 @@
+//
+//  FMDefine.pch
+//  心灵FM
+//
+//  Created by qianfeng on 16/2/19.
+//  Copyright (c) 2016年 qianfeng. All rights reserved.
+//
+
+#ifndef __FM_FMDefine_pch
+#define __FM_FMDefine_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//屏幕的size
+#define FM_SIZE [UIScreen mainScreen].bounds.size
+
+//weakSelf 的宏定义
+#define weakSelf(x) __weak typeof(*&self)x = self
+
+//宏定义HOST
+#define HOST @"http://yiapi.xinli001.com/fm/home-list.json"
+
+//宏定义属性
+#define WS(x) @property(nonatomic,copy)NSString* x
+
+//分享的首页url
+#define SHARE @"http://yiapi.xinli001.com/fm/fm-share-page/99388795"
+
+#endif
